@@ -26,7 +26,7 @@ const RiskCalculator = () => {
       {/* Input fields */}
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium mb-1">Asset Value ($)</label>
+          <label className="block text-sm font-medium mb-1">Asset Value (NOK)</label>
           <input
             type="text"
             value={formatAssetValueDisplay(assetValue)}
@@ -82,8 +82,8 @@ const RiskCalculator = () => {
         <h3 className="text-lg font-semibold mb-2">Results</h3>
         <div className="space-y-2">
           <p>ARO (Annual Rate of Occurrence): {aro.toFixed(2)}</p>
-          <p>SLE (Single Loss Expectancy): ${sle.toLocaleString()}</p>
-          <p>ALE (Annual Loss Expectancy): ${ale.toLocaleString()}</p>
+          <p>SLE (Single Loss Expectancy): NOK {sle.toLocaleString()}</p>
+          <p>ALE (Annual Loss Expectancy): NOK {ale.toLocaleString()}</p>
         </div>
       </div>
     </div>
